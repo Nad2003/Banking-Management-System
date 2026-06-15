@@ -27,11 +27,10 @@ This is a console-based Banking Management System developed using Python and MyS
 ---
 
 🧠 Key Concepts Used  
-- Python (Core + OOP)  
+  
 - MySQL Database  
 - mysql-connector-python  
 - SQL Queries (CRUD operations)  
-- File Handling  
 - ReportLab (PDF generation)  
 - Menu-driven console application  
 
@@ -56,8 +55,6 @@ This is a console-based Banking Management System developed using Python and MyS
 ---
 
 🔥 Future Improvements  
-
-- PIN-based login system  
 - Tkinter GUI interface  
 - Email/SMS alerts for transactions  
 - Interest calculation system  
@@ -80,7 +77,7 @@ This project helped in understanding:
 ---
 
 👨‍💻 Author  
-Developed by [YOUR NAME]
+Developed by [Nadeem]
 
 ---
 

@@ -1,0 +1,36 @@
+CREATE DATABASE NEWDB;
+USE NEWDB;
+
+CREATE TABLE ACCOUNT(
+account_id INT PRIMARY KEY  ,
+NAME VARCHAR(10) NOT NULL,
+ACCOUNT_TYPE VARCHAR(10) NOT NULL
+
+);
+
+
+
+
+CREATE TABLE Transactions (
+    transaction_id INT PRIMARY KEY ,
+    account_id INT,
+    amount DECIMAL(10,2),
+    -- transaction_date DATE,
+    
+    FOREIGN KEY (account_id)
+    REFERENCES ACCOUNT(account_id)
+);
+
+
+CREATE TABLE TRANSECTION_HISTORY(
+ID int auto_increment PRIMARY key,
+account_id int ,
+amount int,
+TRANSECTION_TYPE varchar(10),
+TRANSECTION_DATE DATETIME DEFAULT current_timestamp,
+FOREIGN KEY(account_id) references ACCOUNT(account_id)
+ON delete cascade
+);
+
+
+
